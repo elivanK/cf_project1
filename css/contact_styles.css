@@ -1,0 +1,12 @@
+.box {
+    margin: auto;
+    width: 50%;
+    border: 3px solid rgb(107, 138, 179);
+    padding: 10px;
+    background-color: #eedede;
+    padding: 30px;
+    font-family: 'East Sea Dokdo', cursive, Futura, Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 100;
+}
