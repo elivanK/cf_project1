@@ -2,10 +2,14 @@
     box-sizing: border-box;
 }
 
-.container {
+.contain {
     margin: 0 auto;
     width: 80%;
     padding: 20px;
+}
+
+.content {
+    padding-top: 70px;
 }
 
 .header {
@@ -75,10 +79,6 @@ h3 {
 body {
     background-color: #fffeea;
     color: #34495e;
-}
-
-.content {
-    padding-top: 70px;
 }
 
 .left {
