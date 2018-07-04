@@ -79,7 +79,8 @@ nav a:hover {
 }
 
 .card-header {
-    background: #5d37a8;
+    background: #50ace9;
+    font-family: Futura, Helvetica, Arial, sans-serif;
 }
 
 .card-header button {
