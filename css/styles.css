@@ -77,3 +77,19 @@ nav a:hover {
     -webkit-transition: 600ms;
     /* Safari */
 }
+
+.card-header {
+    background: #5d37a8;
+}
+
+.card-header button {
+    color: #ffffff;
+}
+
+.card-header button:hover {
+    color: #ffffff;
+}
+
+.card-body {
+    font-size: 18px;
+}
