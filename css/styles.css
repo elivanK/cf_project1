@@ -27,6 +27,12 @@
     font-weight: 100;
 }
 
+.custom-container {
+    margin: 0 auto;
+    padding: 20px;
+    width: 80%;
+}
+
 .contain {
     margin: 0 auto;
     width: 80%;
@@ -34,7 +40,8 @@
 }
 
 .content {
-    padding-top: 100px;
+    padding-top: 64px;
+    height: 100vh;
 }
 
 .left {
@@ -43,6 +50,10 @@
 
 .right {
     float: right;
+}
+
+.column-grid {
+    padding: 70px;
 }
 
 nav {
@@ -93,4 +104,8 @@ nav a:hover {
 
 .card-body {
     font-size: 18px;
+}
+
+nav {
+    z-index: 1;
 }
