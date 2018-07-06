@@ -33,12 +33,6 @@
     width: 80%;
 }
 
-.contain {
-    margin: 0 auto;
-    width: 80%;
-    padding: 20px;
-}
-
 .content {
     padding-top: 64px;
     height: 100vh;
@@ -52,9 +46,7 @@
     float: right;
 }
 
-.column-grid {
-    padding: 70px;
-}
+.column-grid {}
 
 nav {
     background-color: #333;
