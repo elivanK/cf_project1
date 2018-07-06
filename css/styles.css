@@ -11,6 +11,10 @@
     color: white;
 }
 
+.work {
+    padding-top: 50px;
+}
+
 
 /* contant_style*/
 
@@ -33,9 +37,9 @@
     width: 80%;
 }
 
-.content {
-    padding-top: 64px;
-    height: 100vh;
+.container {
+    margin: 0 auto;
+    width: 80%;
 }
 
 .left {
@@ -46,7 +50,17 @@
     float: right;
 }
 
-.column-grid {}
+.carousel-inner h5 {
+    font-family: Futura, Helvetica, Arial, sans-serif;
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+
+.carousel-inner p {
+    font-family: Futura, Helvetica, Arial, sans-serif;
+    font-size: 1.2em;
+    padding-bottom: 10px;
+}
 
 nav {
     background-color: #333;
