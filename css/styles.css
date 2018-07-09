@@ -132,3 +132,16 @@ nav {
 .addSpace {
     margin: 10%;
 }
+
+.work {
+    font-family: Futura, Helvetica, Arial, sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+#work_id {
+    padding: 20px;
+    margin: 20px;
+}
