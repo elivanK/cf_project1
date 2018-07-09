@@ -14,19 +14,6 @@
 
 /* contant_style*/
 
-.box {
-    margin: auto;
-    width: 50%;
-    border: 3px solid rgb(107, 138, 179);
-    padding: 10px;
-    background-color: #eedede;
-    padding: 30px;
-    font-family: 'East Sea Dokdo', cursive, Futura, Helvetica, Arial, sans-serif;
-    text-align: center;
-    font-size: 1.5em;
-    font-weight: 100;
-}
-
 .custom-container {
     margin: 0 auto;
     padding: 20px;
@@ -111,4 +98,37 @@ nav a:hover {
 
 nav {
     z-index: 1;
+}
+
+
+/* About.html */
+
+.box {
+    margin: 20%;
+    width: 50%;
+    border: 3px solid rgb(107, 138, 179);
+    padding: 10px;
+    background-color: #eedede;
+    padding: 30px;
+    font-family: 'East Sea Dokdo', cursive, Futura, Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 100;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.imageAbout {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+    display: inline-block;
+}
+
+.addSpace {
+    margin: 15%;
 }

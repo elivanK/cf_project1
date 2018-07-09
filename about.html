@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/about_styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <!--[if lt IE 9]>
     <script src="dist/html5shiv.js"></script>
     <![endif]-->
@@ -33,33 +33,44 @@
         </section>
     </nav>
     <!--end of nav-->
-    <section class="contain content">
+    <section class="container">
         <section class="header">
             <h1>About Me</h1>
         </section>
         <!-- end header -->
 
-        <!-- end container -->
-        <section class="image column">
-            <img src="img/profile.jpg" alt="Me">
-        </section>
+        <div class="row">
+            <div class="col-xs-12 col-md-4">
+                <section class="image column">
+                    <img class="imageAbout" src="img/profile.jpg" alt="Me">
+                </section>
+            </div>
+        </div>
         <!-- end image -->
-        <section class="intro column">
-            <h2>Introduction</h1>
-                <p>I am a dedicated developer, trained in the latest technologies and have knowledge in frontend and backend in particular Node.js,
-                    <br>responsive frameworks and SQL database.
-        </section>
+        <div class="col-xs-12 col-md-4">
+            <div class="intro column">
+                <section class="intro column">
+                    <h2>Introduction</h1>
+                        <p>I am a dedicated developer, trained in the latest technologies and have knowledge in frontend and backend in particular Node.js,
+                            <br>responsive frameworks and SQL database.
+                </section>
+            </div>
+        </div>
         <!-- end example -->
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <section class="skills column">
-            <h3>My Skills</h3>
-            <ul id="skills-list">
-                <li>Frontend: HTML, CSS, JavaScript.</li>
-                <li>Backend: Node.js, SQL, MongoDB, Ruby, ROR.</li>
-            </ul>
-        </section>
+        <div class="col-xs-12 col-md-4">
+            <div class="skill column">
+                <section class="skills column">
+                    <h3>My Skills</h3>
+                    <ul id="skills-list">
+                        <li>Frontend: HTML, CSS, JavaScript.</li>
+                        <li>Backend: Node.js, SQL, MongoDB, Ruby, ROR.</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
         <!-- end skill -->
         <section class="main-text">
             <h3>My Story</h3>
