@@ -20,6 +20,7 @@
 </head>
 
 <body>
+    <!-- The navigation bar -->
     <nav class="custom-container">
         <section class="left">
             <a href="/" class="logo">CareerFoundry</a>
@@ -28,10 +29,13 @@
         <section class="right">
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
+            <a href="work.html">Work</a>
             <a href="faq.html">FAQ</a>
         </section>
     </nav>
+    <!-- End of the navigation bar -->
 
+    <!-- Carousel -->
     <section class="content">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -72,8 +76,10 @@
             </a>
         </div>
     </section>
+    <!-- End of the carousel -->
+
+    <!-- The three column grid -->
     <section class="container">
-        <!-- Three Column Grid -->
         <div class="row">
             <div class="col-xs-12 col-md-4">
                 <h2>Portfolio Concept</h2>
@@ -96,41 +102,157 @@
             </div>
         </div>
         <!-- /col -->
-        </div>
     </section>
     <!-- /container -->
-    <!-- Adding work -->
+
+    <!--Stat page about.html-->
+    <section class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-4">
+                <section class="image column">
+                    <img class="imageAbout" src="img/profile.jpg" alt="Me">
+                </section>
+            </div>
+        </div>
+        <!-- end image -->
+        <div class="col-xs-12 col-md-4">
+            <div class="intro column">
+                <section class="intro column">
+                    <h2>Introduction</h2>
+                    <p>I am a dedicated developer, trained in the latest technologies and have knowledge in frontend and backend in particular Node.js,
+                        <br>responsive frameworks and SQL database.
+                </section>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-md-4">
+            <div class="skill column">
+                <section class="skills column">
+                    <h3>My Skills</h3>
+                    <ul id="skills-list">
+                        <li>Frontend: HTML, CSS, JavaScript.</li>
+                        <li>Backend: Node.js, SQL, MongoDB, Ruby, ROR.</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        <!-- end skill -->
+        <section class="main-text">
+            <h3>My Story</h3>
+            <p>
+                I find myself enjoying learning new things every day and I am eager to learn additional technologies as necessary.
+                <br>At the moment I'm enrolled in a course to improve my coding skills and my knowledge in Ruby on Rails.
+                <br>I am looking for a job in the Backend.
+            </p>
+        </section>
+        <a href="index.html">Back to main page</a>
+    </section>
+
+    <!--Start page Contact -->
+    <section class="container">
+        <div class="box">
+            <p>To contact me via <i class="fas fa-at"></i> elivanmetal@gmail.com</p>
+            <p>My address <i class="fas fa-map-marker-alt"></i> Ritterstr. 114 10969 Berlin</p>
+            <p> <i class="fas fa-phone"></i> 030-333-333-33</p>
+            <a href="index.html">Back to main page</a>
+        </div>
+    </section>
+    <!--End page Contact-->
+
+    <!-- Start page work.html -->
     <div class="work">
         Work
     </div>
     <div class="container">
         <div class="row" id="work_id">
             <div class="col-screensize-number">
-                <img src="img/robot.jpg">
+                <img src="img/robot.jpg" alt="robot">
             </div>
             <div class="col-screensize-number">
-                <img src="img/robot.jpg">
+                <img src="img/robot.jpg" alt="robot">
             </div>
             <div class="col-screensize-number">
-                <img src="img/robot.jpg">
+                <img src="img/robot.jpg" alt="robot">
             </div>
             <div class="col-screensize-number">
-                <img src="img/robot.jpg">
+                <img src="img/robot.jpg" alt="robot">
             </div>
             <div class="col-screensize-number">
-                <img src="img/robot.jpg">
+                <img src="img/robot.jpg" alt="robot">
             </div>
             <div class="col-screensize-number">
-                <img src="img/robot.jpg">
+                <img src="img/robot.jpg" alt="robot">
             </div>
             <div class="col-screensize-number">
-                <img src="img/robot.jpg">
+                <img src="img/robot.jpg" alt="robot">
             </div>
             <div class="col-screensize-number">
-                <img src="img/robot.jpg">
+                <img src="img/robot.jpg" alt="robot">
             </div>
         </div>
     </div>
+    <!-- End of work.html-->
+
+    <!-- faq.html-->
+    <div class="addSpace">
+        <section class="container">
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Why did you decide to become a web developer?
+                              <i class="fas fa-plus"></i>
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                            on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                            beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    What is your design process?
+                              <i class="fas fa-plus"></i>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                            on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                            beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Who are your clients?
+                              <i class="fas fa-plus"></i>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                            on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft
+                            beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--End of faq.html-->
 
     <!-- ============================= -->
     <!-- All your JavaScript comes now -->
