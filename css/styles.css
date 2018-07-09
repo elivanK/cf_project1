@@ -11,10 +11,6 @@
     color: white;
 }
 
-.work {
-    padding-top: 50px;
-}
-
 
 /* contant_style*/
 
@@ -40,6 +36,7 @@
 .container {
     margin: 0 auto;
     width: 80%;
+    padding: 2%;
 }
 
 .left {
