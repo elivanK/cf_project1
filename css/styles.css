@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+body {
+    position: relative;
+}
+
 .jumbotron {
     background-image: url("../img/landscape.jpg");
     background-size: cover;
@@ -13,12 +17,6 @@
 
 
 /* contant_style*/
-
-.custom-container {
-    margin: 0 auto;
-    padding: 20px;
-    width: 80%;
-}
 
 .container {
     margin: 0 auto;
@@ -44,6 +42,22 @@
     font-family: Futura, Helvetica, Arial, sans-serif;
     font-size: 1.2em;
     padding-bottom: 10px;
+}
+
+.navbar-brand {
+    text-transform: uppercase;
+}
+
+a.navbar-brand {
+    color: steelblue !important;
+}
+
+
+/* .navbar {
+    margin: 0 auto;
+    padding: 20px;
+    width: 80%;
+    position: fixed;
 }
 
 nav {
@@ -76,8 +90,7 @@ nav a:hover {
     text-decoration: none;
     transition: color 600ms;
     -webkit-transition: 600ms;
-    /* Safari */
-}
+    */
 
 .card-header {
     background: #50ace9;
@@ -103,19 +116,6 @@ nav {
 
 /* About.html */
 
-.box {
-    margin: 10%;
-    width: 50%;
-    border: 3px solid rgb(107, 138, 179);
-    padding: 10px;
-    background-color: #eedede;
-    padding: 30px;
-    font-family: 'East Sea Dokdo', cursive, Futura, Helvetica, Arial, sans-serif;
-    text-align: center;
-    font-size: 1.5em;
-    font-weight: 100;
-}
-
 .header {
     text-align: center;
     margin-bottom: 40px;
@@ -133,15 +133,37 @@ nav {
     margin: 10%;
 }
 
-.work {
-    font-family: Futura, Helvetica, Arial, sans-serif;
-    font-size: 1.5em;
-    text-align: center;
-    margin: 10px;
-    padding: 10px;
+.content {
+    padding-top: 70px;
 }
 
-#work_id {
+#contact {
+    background-image: url("../img/contact.jpg");
+    /*Add a background image*/
+    padding-top: 50px 100px 100px 100px;
+    background-attachment: fixed;
+    /*Give the background a fixed position does it not scroll when you scroll*/
+    background-size: cover;
+    /*Have the background cover the entire div section*/
+    color: white;
+    /*Change the color of the text on top so it is readable and adjust the padding as needed.*/
+    height: 400px;
+}
+
+.contact {
+    color: black;
+    font-family: Futura, Helvetica, Arial, sans-serif;
+    font-size: 1.5em;
     padding: 20px;
     margin: 20px;
+}
+
+#faq {
+    margin: 15% auto;
+    width: 80%;
+}
+
+#about {
+    margin: 15% auto;
+    width: 80%;
 }

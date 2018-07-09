@@ -19,21 +19,41 @@
     <![endif]-->
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar">
     <!-- The navigation bar -->
-    <nav class="custom-container">
-        <section class="left">
-            <a href="/" class="logo">CareerFoundry</a>
-        </section>
-
-        <section class="right">
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-            <a href="work.html">Work</a>
-            <a href="faq.html">FAQ</a>
-        </section>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" role="navigation" id="navbar-example">
+        <a class="navbar-brand" href="#">CareerFoundry</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#carouselExampleIndicators">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Works
+                              </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#work">Work 1</a>
+                        <a class="dropdown-item" href="https://elivank.github.io/">Work 2</a>
+                        <a class="dropdown-item" href="https://github.com/elivanK">Work 3</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#faq">FAQ</a>
+                </li>
+            </ul>
+        </div>
     </nav>
-    <!-- End of the navigation bar -->
+    <!-- end nav container -->
 
     <!-- Carousel -->
     <section class="content">
@@ -106,16 +126,16 @@
     <!-- /container -->
 
     <!--Stat page about.html-->
-    <section class="container">
+    <div class="container content" id="about">
         <div class="row">
-            <div class="col-xs-12 col-md-4">
+            <div class="col-md-4">
                 <section class="image column">
                     <img class="imageAbout" src="img/profile.jpg" alt="Me">
                 </section>
             </div>
         </div>
         <!-- end image -->
-        <div class="col-xs-12 col-md-4">
+        <div class="col-md-4">
             <div class="intro column">
                 <section class="intro column">
                     <h2>Introduction</h2>
@@ -125,7 +145,7 @@
             </div>
         </div>
 
-        <div class="col-xs-12 col-md-4">
+        <div class="col-md-4">
             <div class="skill column">
                 <section class="skills column">
                     <h3>My Skills</h3>
@@ -145,26 +165,24 @@
                 <br>I am looking for a job in the Backend.
             </p>
         </section>
-        <a href="index.html">Back to main page</a>
-    </section>
+    </div>
 
     <!--Start page Contact -->
-    <section class="container">
-        <div class="box">
-            <p>To contact me via <i class="fas fa-at"></i> elivanmetal@gmail.com</p>
-            <p>My address <i class="fas fa-map-marker-alt"></i> Ritterstr. 114 10969 Berlin</p>
+    <div class="container content" id="contact">
+        <div class="contact">
+            <p>Email: <i class="fas fa-at"></i> elivanmetal@gmail.com</p>
+            <p>Address <i class="fas fa-map-marker-alt"></i> Ritterstr. 114 10969 Berlin</p>
             <p> <i class="fas fa-phone"></i> 030-333-333-33</p>
-            <a href="index.html">Back to main page</a>
         </div>
-    </section>
+    </div>
     <!--End page Contact-->
 
     <!-- Start page work.html -->
-    <div class="work">
-        Work
-    </div>
-    <div class="container">
-        <div class="row" id="work_id">
+    <div class="container content" id="work">
+        <div class="header">
+            <h1>Works</h1>
+        </div>
+        <div class="row">
             <div class="col-screensize-number">
                 <img src="img/robot.jpg" alt="robot">
             </div>
@@ -194,7 +212,7 @@
     <!-- End of work.html-->
 
     <!-- faq.html-->
-    <div class="addSpace">
+    <div class="container content" id="faq">
         <section class="container">
             <div id="accordion">
                 <div class="card">
@@ -257,7 +275,20 @@
     <!-- ============================= -->
     <!-- All your JavaScript comes now -->
     <!-- ============================= -->
-
+    <script type="text/javascript">
+        var $root = $('html, body');
+        $('#navbar-example a').click(function() {
+            var href = $.attr(this, 'href');
+            if (href != undefined && href != '#') {
+                $root.animate({
+                    scrollTop: $(href).offset().top
+                }, 500, function() {
+                    window.location.hash = href;
+                });
+            }
+            return false;
+        });
+    </script>
     <!-- Bootstrap core JS -->
     <!-- Can place script tags with JavaScript files here -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
