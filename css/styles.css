@@ -135,20 +135,20 @@ nav {
 #contact {
     background-image: url("../img/contact.jpg");
     /*Add a background image*/
-    padding-top: 50px 100px 100px 100px;
+    padding: 50px;
     background-attachment: fixed;
     /*Give the background a fixed position does it not scroll when you scroll*/
     background-size: cover;
     /*Have the background cover the entire div section*/
     color: white;
     /*Change the color of the text on top so it is readable and adjust the padding as needed.*/
-    height: 400px;
+    height: 800px;
 }
 
 .contact {
     color: black;
     font-family: Futura, Helvetica, Arial, sans-serif;
-    font-size: 1.5em;
+    font-size: 1.1em;
     padding: 20px;
     margin: 20px;
 }
@@ -163,6 +163,16 @@ nav {
     width: 80%;
 }
 
+#work {
+    margin: 15% auto;
+    width: 80%;
+}
+
+
+}
 .footer a:active {
     color: #ff0000;
+}
+.form-control {
+    width: 80%;
 }
