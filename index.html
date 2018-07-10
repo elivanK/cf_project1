@@ -103,22 +103,24 @@
         <div class="row">
             <div class="col-xs-12 col-md-4">
                 <h2>Portfolio Concept</h2>
-                <p>My portfolio concept is to display my skills as a backend developer, my project goals are to point out my knowledge in each tech stack, whether it is server side or databases.</p>
-                <a class="btn btn-primary " href="# " role="button ">View details &raquo;</a>
+                <p>My portfolio concept is to display my skills as a backend developer, my project goals are to point out my knowledge in each tech stack,
+                    <a href="#" title="More information" id="item1">whether</a> it is server side or databases.</p>
+                <!--a class="btn btn-primary " href="# " role="button ">View details &raquo;</a-->
+                <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">View details &raquo;</button>
             </div>
             <!-- /col -->
 
             <div class="col-xs-12 col-md-4">
                 <h2>Project Goals</h2>
                 <p>I plan to study very hard and many hours since I am eager to learn additional technologies.</p>
-                <a class="btn btn-primary " href="# " role="button ">View details &raquo;</a>
+                <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">View details &raquo;</button>
             </div>
             <!-- /col -->
 
             <div class="col-xs-12 col-md-4">
                 <h2>Course Goals</h2>
                 <p>My main goal is to work in the backend and I took this course in order to learn Ruby and ROR since I would like to work in a start up for a few years until I can be self employed.</p>
-                <a class="btn btn-primary " href="# " role="button ">View details &raquo;</a>
+                <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">View details &raquo;</button>
             </div>
         </div>
         <!-- /col -->
@@ -374,6 +376,16 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js " integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ " crossorigin="anonymous "></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js " integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm " crossorigin="anonymous "></script>
+    <script>
+        $(function() {
+            $('#item1').tooltip();
+        });
+    </script>
+    <script>
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 </body>
 
 </html>
