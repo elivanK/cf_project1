@@ -116,11 +116,6 @@ nav {
 
 /* About.html */
 
-.header {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
 .imageAbout {
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -166,4 +161,8 @@ nav {
 #about {
     margin: 15% auto;
     width: 80%;
+}
+
+.footer a:active {
+    color: #ff0000;
 }

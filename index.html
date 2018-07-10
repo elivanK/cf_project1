@@ -128,16 +128,16 @@
     <!--Stat page about.html-->
     <div class="container content" id="about">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-12 col-md-3">
                 <section class="image column">
                     <img class="imageAbout" src="img/profile.jpg" alt="me">
                 </section>
             </div>
         </div>
         <!-- end image -->
-        <div class="col-md-4">
-            <div class="intro column">
-                <section class="intro column">
+        <div class="col-7 vol-md-5">
+            <div class="intro">
+                <section class="intro">
                     <h2>Introduction</h2>
                     <p>I am a dedicated developer, trained in the latest technologies and have knowledge in frontend and backend in particular Node.js,
                         <br>responsive frameworks and SQL database.
@@ -145,7 +145,7 @@
             </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-5 col-md-3">
             <div class="skill column">
                 <section class="skills column">
                     <h3>My Skills</h3>
@@ -157,7 +157,7 @@
             </div>
         </div>
         <!-- end skill -->
-        <section class="main-text">
+        <section class="col-12 main-text">
             <h3>My Story</h3>
             <p>
                 I find myself enjoying learning new things every day and I am eager to learn additional technologies as necessary.
@@ -273,10 +273,32 @@
     <!--End of faq.html-->
 
     <!-- The footer-->
-    <footer>&copy; Elivan Kook</footer>
+    <!--******** Footer *********-->
+    <footer class="container">
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Pwrwf_8H25Y" allowfullscreen></iframe>
+        </div>
+        <br>
+        <div>
+            <!-- Twitter -->
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <a class="twitter-follow-button" href="https://twitter.com/TwitterDev">Follow @TwitterDev</a>
+
+            <br>
+
+            <!-- Facebook -->
+            <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&width=450&layout=standard&action=like&size=small&show_faces=false&share=true&height=35&appId" width="450" height="35" style="border:none;overflow:hidden"
+                scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+        </div>
+        <div class="footer-element">&copy; Elivan Kook 2018</div>
+        </div>
+        <!-- end container footer -->
+    </footer>
+
     <!-- ============================= -->
     <!-- All your JavaScript comes now -->
     <!-- ============================= -->
+
     <script type="text/javascript">
         var $root = $('html, body');
         $('#navbar-example a').click(function() {
