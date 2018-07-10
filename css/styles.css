@@ -116,6 +116,10 @@ nav {
 
 /* About.html */
 
+.image {
+    padding-top: 100px;
+}
+
 .imageAbout {
     border: 1px solid #ddd;
     border-radius: 4px;
