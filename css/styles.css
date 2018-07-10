@@ -186,3 +186,9 @@ nav a:hover {
     height: 500px;
     width: 100%;
 }
+
+.link {
+    color: black;
+    text-decoration: none;
+    background-color: none;
+}
