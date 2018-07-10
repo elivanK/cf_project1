@@ -56,7 +56,7 @@
     <!-- end nav container -->
 
     <!-- Carousel -->
-    <section class="content">
+    <section class="carousel">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -206,7 +206,7 @@
     <!-- Start page work.html -->
     <div class="container" id="work">
         <div class="header">
-            <h1>Works</h1>
+            <h1 class="content">Works</h1>
         </div>
         <div class="row">
             <div class="col-md-4 col-xs-6">
@@ -238,7 +238,37 @@
     <!-- End of work.html-->
 
     <!-- faq.html-->
+
     <div class="container content" id="faq">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <h2>Learn More</h2>
+                </div>
+
+                <div class="col-sm">
+                    <!-- Button trigger modal -->
+                    <button id="btn" type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal">Resume</button>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade bd-example-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">My Resume</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                          </button>
+                    </div>
+                    <div class="modal-body">
+                        <embed id="resume" src="img/Elivan Kook – CakeResume.pdf">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of modal -->
         <section class="container">
             <div id="accordion">
                 <div class="card">

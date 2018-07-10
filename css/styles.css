@@ -109,10 +109,6 @@ nav a:hover {
     font-size: 18px;
 }
 
-nav {
-    z-index: 1;
-}
-
 
 /* About.html */
 
@@ -162,6 +158,10 @@ nav {
     width: 80%;
 }
 
+#btn {
+    float: right;
+}
+
 #about {
     margin: 15% auto;
     width: 80%;
@@ -172,11 +172,17 @@ nav {
     width: 80%;
 }
 
-
-}
-.footer a:active {
-    color: #ff0000;
-}
 .form-control {
     width: 80%;
+}
+
+@media (min-width: 768px) {
+    .modal-button button {
+        float: right;
+    }
+}
+
+#resume {
+    height: 500px;
+    width: 100%;
 }
