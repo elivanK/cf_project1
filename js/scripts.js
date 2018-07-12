@@ -28,6 +28,19 @@ $(document).ready(function() {
 
     // textarea background
     $("#message-box").css("background-color", "#F5F5F5");
+    //Pass event keyup
+    $("#message-box").on("keyup", function() {
+        //console.log("Keyup happend");
+        //Get the number of characters the user types
+        var charCount = $("#message-box").val().length;
+        console.log(charCount);
+        if (charCount > 5) {
+            $("#char-count").css("color", "red");
+        } else {
+            $("#char-count").css("color", "green");
+        };
+        $("#char-count").html(charCount);
+    });
     //Tooltips
     $(function() {
         $('#item1').tooltip();
@@ -42,9 +55,15 @@ $(document).ready(function() {
     $("#btnSubmit").on("click", function() {
         var comment = $("#message-box").val();
         console.log(comment);
-        $("#visible-comment").html(comment);
-        $("#message-box").hide();
+        if (comment === "") {
+            console.log("The text-area is empty");
+            $("#message-box").css("border-color", "red");
+        } else {
+            $("#visible-comment").html(comment);
+            $("#message-box").hide();
+        };
+
         //No backend so the content will disappear when submitted.
         return false;
     });
-});
+})
