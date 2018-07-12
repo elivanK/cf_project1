@@ -196,9 +196,10 @@
                         <input placeholder="Please endter your email" class="form-control" type="email" required>
                     </div>
                     <label for="message">Message</label>
-                    <textarea minlength="20" placeholder="Your message" class="form-control" style="resize:none" cols="40" rows="5"></textarea>
+                    <textarea minlength="20" placeholder="Your message" class="form-control" style="resize:none" cols="40" rows="5" id="message-box"></textarea>
+                    <p id="visible-comment"></p>
                     <br>
-                    <button type="submit" class="btn btn-dark">Submit</button>
+                    <button type="submit" class="btn btn-dark" id="btnSubmit">Submit</button>
                 </form>
             </div>
         </div>
@@ -341,9 +342,7 @@
             <!-- Twitter -->
             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             <a class="twitter-follow-button" href="https://twitter.com/TwitterDev">Follow @TwitterDev</a>
-
-            <br>
-
+            <br />
             <!-- Facebook -->
             <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&width=450&layout=standard&action=like&size=small&show_faces=false&share=true&height=35&appId" width="450" height="35" style="border:none;overflow:hidden"
                 scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
@@ -352,40 +351,14 @@
         </div>
         <!-- end container footer -->
     </footer>
-
-    <!-- ============================= -->
-    <!-- All your JavaScript comes now -->
-    <!-- ============================= -->
-
-    <script type="text/javascript">
-        var $root = $('html, body');
-        $('#navbar-example a').click(function() {
-            var href = $.attr(this, 'href');
-            if (href != undefined && href != '#') {
-                $root.animate({
-                    scrollTop: $(href).offset().top
-                }, 500, function() {
-                    window.location.hash = href;
-                });
-            }
-            return false;
-        });
-    </script>
     <!-- Bootstrap core JS -->
     <!-- Can place script tags with JavaScript files here -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js " integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ " crossorigin="anonymous "></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js " integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm " crossorigin="anonymous "></script>
-    <script>
-        $(function() {
-            $('#item1').tooltip();
-        });
-    </script>
-    <script>
-        $(function() {
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-    </script>
+    <!--script src="js/jquery.stellar.min.js"></script-->
+    <script src="js/scripts.js"></script>
+
 </body>
 
 </html>
