@@ -1,6 +1,6 @@
     var works = [{
             title: "First Project",
-            pic: "/Users/elivan/Desktop/cf/cf_project1/img/work1.png",
+            pic: "./img/work1.png",
             url: "https://saffron-petition.herokuapp.com/register"
         },
         {
