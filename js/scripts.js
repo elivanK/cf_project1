@@ -66,4 +66,21 @@ $(document).ready(function() {
         //No backend so the content will disappear when submitted.
         return false;
     });
-})
+
+    //Work section
+    //console.log(works.toString());
+    for (var i = 0; i < works.length; ++i) {
+        $("#work").append("\
+        <div class='col-sm-6 col-md-4'>\
+          <img class='img-rsoponsive' src='" + works[i] + "'>\
+        </div>\
+        ");
+        var images = $("#work img");
+        //console.log(images);
+        if (i % 2 === 0) {
+            $(images[i]).css("border", "2px solid DodgerBlue");
+        } else {
+            $(images[i]).css("border", "2px solid salmon");
+        };
+    };
+});
