@@ -72,7 +72,10 @@ $(document).ready(function() {
     for (var i = 0; i < works.length; ++i) {
         $("#work").append("\
         <div class='col-sm-6 col-md-4'>\
-          <img class='img-rsoponsive' src='" + works[i] + "'>\
+        <a href='https://saffron-petition.herokuapp.com/register' class='work-img'>\
+          <img class='work-img' src='" + works[i].pic + "'>\
+          <span class='info'><p class='proj-title'>Title:</p>Work title</span>\
+          </a>\
         </div>\
         ");
         var images = $("#work img");
@@ -83,4 +86,11 @@ $(document).ready(function() {
             $(images[i]).css("border", "2px solid salmon");
         };
     };
+
+    $(".work-img").mouseenter(function() {
+        //console.log(this);
+        $(".info", this).show();
+    }).mouseleave(function() {
+        $(".info", this).hide();
+    });
 });
