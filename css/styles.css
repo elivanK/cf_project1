@@ -127,11 +127,6 @@ a.navbar-brand {
     width: 80%;
 }
 
-#works {
-    margin: 15% auto;
-    width: 80%;
-}
-
 .form-control {
     width: 80%;
 }
@@ -151,6 +146,13 @@ a.navbar-brand {
     color: black;
     text-decoration: none;
     background-color: none;
+}
+
+#works {
+    margin: 20% auto;
+    width: 80%;
+    height: 80%;
+    display: block;
 }
 
 .work-img {
@@ -182,4 +184,10 @@ a.navbar-brand {
 
 .proj-title {
     font-weight: 100;
+}
+
+#map {
+    margin: 20px;
+    height: 40%;
+    width: 100%;
 }

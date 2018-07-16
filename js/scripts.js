@@ -1,4 +1,43 @@
 //Not to wait until the document is ready
+
+//Google map nesting via script.
+var map;
+
+function initMap() {
+    //My lat and lng for my address stored in objects.
+    var myLatLng = {
+        lat: 52.501346,
+        lng: 13.410782
+    };
+    //Linking the map id to the google map to display in div.
+    map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 4,
+        center: myLatLng
+    });
+    //Addomg a marker on the map that shows a message my address
+    var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'Click to zoom'
+    });
+    //For the task to implement event listener behaviour so
+    // that Google Maps interacts with user click event.
+    //The event listener when a user click to zoom:
+    map.addListener('center_changed', function() {
+        // 3 seconds after the center of the map has changed, pan back to the
+        // marker.
+        window.setTimeout(function() {
+            map.panTo(marker.getPosition());
+        }, 3000);
+    });
+
+    marker.addListener('click', function() {
+        map.setZoom(14);
+        map.setCenter(marker.getPosition());
+    });
+
+}
+
 // Twitter
 ! function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0],
