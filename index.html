@@ -136,6 +136,7 @@
                     <h2>Introduction</h2>
                     <p>I am a dedicated developer, trained in the latest technologies and have knowledge in frontend and backend in particular Node.js,
                         <br />responsive frameworks and SQL database.
+                    </p>
                 </section>
             </div>
         </div>
@@ -178,17 +179,17 @@
                 <form>
                     <div class="form-group">
                         <label for="text">Name</label>
-                        <input placeholder="Please Enter your name" class="form-control" type="text" required>
+                        <input placeholder="Please Enter your name" class="form-control" type="text" required="" id="text">
                     </div>
                     <div class="form-group">
                         <label for="phone">Phone number</label>
-                        <input placeholder="Phone number" class="form-control" type="number">
+                        <input placeholder="Phone number" class="form-control" type="number" id="phone">
                     </div>
                     <div class="form-group">
                         <label for="email">Email address</label>
-                        <input placeholder="Please endter your email" class="form-control" type="email" required>
+                        <input placeholder="Please endter your email" class="form-control" required="" type="email" id="email">
                     </div>
-                    <label for="message">Message</label>
+                    <label for="message-box">Message</label>
                     <textarea minlength="20" placeholder="Your message" class="form-control" style="resize:none" cols="40" rows="5" id="message-box"></textarea>
                     <p id="visible-comment"></p>
                     <p id="char-count"></p>
@@ -197,11 +198,12 @@
                 </form>
             </div>
         </div>
-        <div class="container" id="map">
-            <!-- Here was the embed iframe googlemap 
+
+    </div>
+    <div id="map">
+        <!-- Here was the embed iframe googlemap 
             <iframe width="600" height="450" frameborder="0" style="border: 0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJTQBeNgROqEcRJ1UMP3Zkyy4&key=AIzaSyCXzPn0tbcLCK0KQJSrczIgfpdo4nMIOOA" allowfullscreen></iframe>
             -->
-        </div>
     </div>
     <!--End page Contact-->
 
@@ -220,18 +222,18 @@
     <!-- faq.html-->
 
     <div class="container content" id="faq">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm">
-                    <h2>Learn More</h2>
-                </div>
 
-                <div class="col-sm">
-                    <!-- Button trigger modal -->
-                    <button id="btn" type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal">Resume</button>
-                </div>
+        <div class="row">
+            <div class="col-sm">
+                <h2>Learn More</h2>
+            </div>
+
+            <div class="col-sm">
+                <!-- Button trigger modal -->
+                <button id="btn" type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal">Resume</button>
             </div>
         </div>
+
         <!-- Modal -->
         <div class="modal fade bd-example-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
@@ -324,7 +326,7 @@
             <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&width=450&layout=standard&action=like&size=small&show_faces=false&share=true&height=35&appId" width="450" height="35" style="border:none;overflow:hidden"
                 scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
         </div>
-        <div class="footer-element">&copy; Elivan Kook 2018</div>
+        <div class="footer-element">&copy; Elivan Kook 2018
         </div>
         <!-- end container footer -->
     </footer>
@@ -338,8 +340,7 @@
     <script src="js/config.js"></script>
     <script src="js/scripts.js"></script>
     <!-- Add the API key to your application -->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXzPn0tbcLCK0KQJSrczIgfpdo4nMIOOA&callback=initMap"></script>
-    type="text/javascript"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXzPn0tbcLCK0KQJSrczIgfpdo4nMIOOA&callback=initMap" type="text/javascript"></script>
 
 </body>
 

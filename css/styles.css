@@ -32,6 +32,11 @@ body {
     float: right;
 }
 
+.carousel-item img {
+    height: 100vh;
+    object-fit: cover;
+}
+
 .carousel-inner h5 {
     font-family: Futura, Helvetica, Arial, sans-serif;
     font-size: 2em;
@@ -73,7 +78,7 @@ a.navbar-brand {
 /* About.html */
 
 .image {
-    padding-top: 100px;
+    padding-top: 5%;
 }
 
 .imageAbout {
@@ -89,28 +94,25 @@ a.navbar-brand {
 }
 
 .content {
-    padding-top: 70px;
+    padding-top: 5%;
 }
 
 #contact {
     background-image: url("../img/contact.jpg");
     /*Add a background image*/
-    padding: 50px;
     background-attachment: fixed;
     /*Give the background a fixed position does it not scroll when you scroll*/
     background-size: cover;
     /*Have the background cover the entire div section*/
     color: white;
     /*Change the color of the text on top so it is readable and adjust the padding as needed.*/
-    height: 800px;
 }
 
 .contact {
     color: black;
     font-family: Futura, Helvetica, Arial, sans-serif;
     font-size: 1.1em;
-    padding: 20px;
-    margin: 20px;
+    padding-top: 5%;
 }
 
 #faq {
@@ -123,8 +125,9 @@ a.navbar-brand {
 }
 
 #about {
-    margin: 15% auto;
+    margin: 2% auto;
     width: 80%;
+    height: 80%;
 }
 
 .form-control {
@@ -149,7 +152,7 @@ a.navbar-brand {
 }
 
 #works {
-    margin: 20% auto;
+    margin: 2% auto;
     width: 80%;
     height: 80%;
     display: block;
@@ -187,7 +190,11 @@ a.navbar-brand {
 }
 
 #map {
-    margin: 20px;
-    height: 40%;
-    width: 100%;
+    margin: 15% auto;
+    height: 400px;
+    width: 70%;
+}
+
+.btn {
+    white-space: normal;
 }
